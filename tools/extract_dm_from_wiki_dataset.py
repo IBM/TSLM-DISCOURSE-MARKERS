@@ -202,7 +202,7 @@ def main():
     parser = get_argparser()
     configuration = parser.parse_args()
     logging.info("Started")
-    wiki = datasets.load_dataset("wikipedia", "2200501.en", split='train')
+    wiki = datasets.load_dataset("wikipedia", "20200501.en", split='train')
     logging.info("Dataset loaded")
 
     dmsExtractor = DiscourseMarkersExtractor(configuration, wiki)
