@@ -110,8 +110,8 @@ def print_pos_neg(config, df):
 
 def analyze_predictions(config):
     logging.info("Starting reading files with predicitions")
-    l = os.listdir(f"{config.predicitions_dir}")
-    bert_df = pd.concat([pd.read_csv(f"{config.predicitions_dir}/{f}")
+    l = os.listdir(f"{config.predictions_dir}")
+    bert_df = pd.concat([pd.read_csv(f"{config.predictions_dir}/{f}")
                         for f in l if f.endswith(".gz")])
     
     cnt, raw = get_counts_for_discourse_markers_from_dataframe(config,
@@ -123,7 +123,7 @@ def analyze_predictions(config):
 def get_argparser():
     parser = ArgumentParser(description='Find positive and negative discourse markers')
     parser.add_argument('--number_of_processors',  default=30, help='Number of CPU cores to be used')
-    parser.add_argument('--predicitions_dir', default='/Users/ilyashnayderman/Downloads/predictions', help='directory that contains gzipped files with scores')
+    parser.add_argument('--predictions_dir', default='/Users/ilyashnayderman/Downloads/predictions', help='directory that contains gzipped files with scores')
     parser.add_argument('--pos_pvalue_threshold', default=0.00001)
     parser.add_argument('--pos_ratio_threshold', default=0.85)
     parser.add_argument('--neg_pvalue_threshold', default=0.00001)
