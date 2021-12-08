@@ -109,7 +109,7 @@ def print_pos_neg(config, df):
     print('\tneg:\n\t', sorted(list(negative)))
 
 def analyze_predictions(config):
-    logging.info("Starting reading files with predicitions")
+    logging.info("Starting reading files with predictions")
     l = os.listdir(f"{config.predictions_dir}")
     bert_df = pd.concat([pd.read_csv(f"{config.predictions_dir}/{f}")
                         for f in l if f.endswith(".gz")])
