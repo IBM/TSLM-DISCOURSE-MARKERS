@@ -1,48 +1,45 @@
-<!-- This should be the location of the title of the repository, normally the short name -->
-# repo-template
-
-<!-- Build Status, is a great thing to have at the top of your repository, it shows that you take your CI/CD as first class citizens -->
-<!-- [![Build Status](https://travis-ci.org/jjasghar/ibm-cloud-cli.svg?branch=master)](https://travis-ci.org/jjasghar/ibm-cloud-cli) -->
+# TSLM-DISCOURSE-MARKERS
 
 <!-- Not always needed, but a scope helps the user understand in a short sentance like below, why this repo exists -->
 ## Scope
 
-The purpose of this project is to provide a template for new open source repositories.
+This repository contains:
 
-<!-- A more detailed Usage or detailed explaination of the repository here -->
+ (1) Code to extract discourse markers from wikipedia (TSA).
+
+ (1) Code to extract significant discoßurse markers from predictions over a sample
+
 ## Usage
 
-This repository contains some example best practices for open source repositories:
+**Evaluation code**: 
 
-* [LICENSE](LICENSE)
-* [README.md](README.md)
-* [CONTRIBUTING.md](CONTRIBUTING.md)
-* [MAINTAINERS.md](MAINTAINERS.md)
-<!-- A Changelog allows you to track major changes and things that happen, https://github.com/github-changelog-generator/github-changelog-generator can help automate the process -->
-* [CHANGELOG.md](CHANGELOG.md)
+<ins>Installation</ins>
 
-> These are optional
+Using pip:
+```
+pip install git+ssh://git@github.com/IBM/tslm-discourse-markers.git#egg=tslm-discourse-markers
+```
 
-<!-- The following are OPTIONAL, but strongly suggested to have in your repository. -->
-* [dco.yml](.github/dco.yml) - This enables DCO bot for you, please take a look https://github.com/probot/dco for more details.
-* [travis.yml](.travis.yml) - This is a example `.travis.yml`, please take a look https://docs.travis-ci.com/user/tutorial/ for more details.
+Alternatively, you can first clone the code, and install the requirements: 
 
-These may be copied into a new or existing project to make it easier for developers not on a project team to collaborate.
+```commandline
+1. git clone git@github.com:IBM/tslm-discousrse-markers.git
+2. cd tslm-discourse-markers
+3. pip install -r requirements.txt
+```
 
-<!-- A notes section is useful for anything that isn't covered in the Usage or Scope. Like what we have below. -->
-## Notes
+<ins>Running</ins>
 
-**NOTE: While this boilerplate project uses the Apache 2.0 license, when
-establishing a new repo using this template, please use the
-license that was approved for your project.**
+## Citing tslm-discourse-markers
 
-**NOTE: This repository has been configured with the [DCO bot](https://github.com/probot/dco).
-When you set up a new repository that uses the Apache license, you should
-use the DCO to manage contributions. The DCO bot will help enforce that.
-Please contact one of the IBM GH Org stewards.**
+If you are using tslm-discourse-markers in a publication, please cite the following paper:
 
-<!-- Questions can be useful but optional, this gives you a place to say, "This is how to contact this project maintainers or create PRs -->
-If you have any questions or issues you can create a new [issue here][issues].
+Matan Orbach, Orith Toledo-Ronen, Artem Spector, Ranit Aharonov, Yoav Katz and Noam Slonim. 2021.
+[YASO: A Targeted Sentiment Analysis Evaluation Dataset for Open-Domain Reviews](https://arxiv.org/abs/2012.14541). EMNLP.  
+
+## Contributing
+
+This project welcomes external contributions, if you would like to contribute please see further instructions [here](CONTRIBUTING.md)
 
 Pull requests are very welcome! Make sure your patches are well tested.
 Ideally create a topic branch for every separate change you make. For
@@ -54,24 +51,36 @@ example:
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Changelog
+
+<!-- A Changelog allows you to track major changes and things that happen, https://github.com/github-changelog-generator/github-changelog-generator can help automate the process -->
+Major changes are documented [here](CHANGELOG.md).
+
+<!-- The following are OPTIONAL, but strongly suggested to have in your repository. 
+* [dco.yml](.github/dco.yml) - This enables DCO bot for you, please take a look https://github.com/probot/dco for more details.
+* [travis.yml](.travis.yml) - This is a example `.travis.yml`, please take a look https://docs.travis-ci.com/user/tutorial/ for more details.
+-->
+
+<!-- A notes section is useful for anything that isn't covered in the Usage or Scope. Like what we have below. -->
+## Notes
+
+<!--
+**NOTE: This repository has been configured with the [DCO bot](https://github.com/probot/dco).
+When you set up a new repository that uses the Apache license, you should
+use the DCO to manage contributions. The DCO bot will help enforce that.
+Please contact one of the IBM GH Org stewards.**
+-->
+
+If you have any questions or issues you can create a new [issue here][issues].
+
 ## License
 
-All source files must include a Copyright and License header. The SPDX license header is 
-preferred because it can be easily scanned.
+This code is distributed under Apache License 2.0. If you would like to see the detailed LICENSE click [here](LICENSE).
 
-If you would like to see the detailed LICENSE click [here](LICENSE).
-
-```text
-#
-# Copyright 2020- IBM Inc. All rights reserved
-# SPDX-License-Identifier: Apache2.0
-#
-```
 ## Authors
 
-Optionally, you may include a list of authors, though this is redundant with the built-in
-GitHub list of contributors.
+The YASO dataset was collected by Liat Ein-Dor, Ilya Shnayderman, Artem Spector, Lena Dankin, Ranit Aharonov and Noam Slonim.
 
-- Author: New OpenSource IBMer <new-opensource-ibmer@ibm.com>
+The code was written by [Ilya Shnayderman](https://github.com/ilyashnil).
 
-[issues]: https://github.com/IBM/repo-template/issues/new
+[issues]: https://github.com/IBM/tslm-discouse-markers/issues/new

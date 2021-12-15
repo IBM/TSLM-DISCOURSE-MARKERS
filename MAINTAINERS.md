@@ -1,3 +1,3 @@
 # MAINTAINERS
 
-Christopher Ferris - chrisfer@us.ibm.com
+Ilya Shnayderman - ilyashn@il.ibm.com
