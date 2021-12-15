@@ -1,7 +1,7 @@
 
 cff-version: 1.2.0
 message: "If you use this data or software, please cite the paper below."
-title: "YASO: A Targeted Sentiment Analysis Evaluation Dataset for Open-Domain Reviews"
+title: "Fortunately, Discourse Markers Can Enhance Language Models for Sentiment Analysis"
 authors:
 - family-names: Ein-Dor
   given-names: Liat
