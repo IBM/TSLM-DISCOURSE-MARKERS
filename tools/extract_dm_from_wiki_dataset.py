@@ -188,7 +188,7 @@ def get_argparser():
                         help="size of chunk to be processed in parralel")
     parser.add_argument('--output_chunk_size', default=100000,
                         help="number of rows in chunk to be stored in the filesytem in parralel")
-    parser.add_argument('--output_dir', default='/tmp/ilyashn')
+    parser.add_argument('--output_dir', default='output')
     parser.add_argument('--safe_factor', default=20,
                         help="Sampling factor, used to find enough example if patterns are not evenly distributed beween files")
     parser.add_argument('--expected_language', default='__label__en')
@@ -203,6 +203,7 @@ def main():
     configuration = parser.parse_args()
     logging.info("Started")
     wiki = datasets.load_dataset("wikipedia", "20200501.en", split='train')
+    #wiki = pd.read_csv('~/Downloads/wiki.sample.csv.gz')
     logging.info("Dataset loaded")
 
     dmsExtractor = DiscourseMarkersExtractor(configuration, wiki)
