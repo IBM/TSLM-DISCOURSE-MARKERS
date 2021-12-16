@@ -27,6 +27,10 @@ Alternatively, you can first clone the code, and install the requirements:
 2. cd tslm-discourse-markers
 3. pip install -r requirements.txt
 ```
+You also need to download fasttext model:
+curl https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin -o ~/Downloads/lid.176.bin
+and spacy english model:
+python -m spacy download en_core_web_sm
 
 <ins>Running</ins>
 
