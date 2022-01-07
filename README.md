@@ -38,8 +38,8 @@ python -m spacy download en_core_web_sm
 
 If you are using tslm-discourse-markers in a publication, please cite the following paper:
 
-Matan Orbach, Orith Toledo-Ronen, Artem Spector, Ranit Aharonov, Yoav Katz and Noam Slonim. 2021.
-[YASO: A Targeted Sentiment Analysis Evaluation Dataset for Open-Domain Reviews](https://arxiv.org/abs/2012.14541). EMNLP.  
+Liat Ein-Dor, Ilya Shnayderman, Artem Spector, Lena Dankin,Ranit Aharonov and Noam Slonim 2022
+[Fortunately, Discourse Markers Can Enhance Language Models for Sentiment Analysis](). AAAI-2022.  
 
 ## Contributing
 
