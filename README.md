@@ -41,6 +41,13 @@ If you are using tslm-discourse-markers in a publication, please cite the follow
 Liat Ein-Dor, Ilya Shnayderman, Artem Spector, Lena Dankin,Ranit Aharonov and Noam Slonim 2022
 [Fortunately, Discourse Markers Can Enhance Language Models for Sentiment Analysis](https://arxiv.org/abs/2201.02026). AAAI-2022.  
 
+## Loading dataset
+import datasets
+
+directory = 'dataset/WIKI_ENGLISH'
+datasets.load_dataset('csv', data_files={folder: [f'{directory}/{folder}/{folder}_*.csv.gz'] for folder in ['train', 'dev','test']})
+
+
 ## Contributing
 
 This project welcomes external contributions, if you would like to contribute please see further instructions [here](CONTRIBUTING.md)
