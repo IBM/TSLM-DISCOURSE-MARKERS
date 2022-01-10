@@ -41,6 +41,10 @@ If you are using tslm-discourse-markers in a publication, please cite the follow
 Liat Ein-Dor, Ilya Shnayderman, Artem Spector, Lena Dankin,Ranit Aharonov and Noam Slonim 2022
 [Fortunately, Discourse Markers Can Enhance Language Models for Sentiment Analysis](https://arxiv.org/abs/2201.02026). AAAI-2022.  
 
+## Model
+
+SenDM model can be found at: https://huggingface.co/ibm/tslm-discourse-markers
+
 ## Loading dataset
 import datasets
 
